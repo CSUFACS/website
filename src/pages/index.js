@@ -2,7 +2,7 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { Navbar } from "../components/Navbar";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import { Header } from "../components/header";
+import { Header } from "../components/Header";
 import HeadingWithLogo from "../components/HeadingWithLogo";
 import { About } from "../components/About";
 
