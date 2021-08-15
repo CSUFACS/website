@@ -1,6 +1,10 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { Navbar } from "../components/Navbar"
+import { Navbar } from "../components/Navbar";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Header } from "../components/header";
+import HeadingWithLogo from "../components/HeadingWithLogo";
+import { About } from "../components/About";
 
 const IndexPage = () => {
   return (
@@ -9,8 +13,25 @@ const IndexPage = () => {
         <meta charSet="utf-8" />
         <title>CSUFACS</title>
       </Helmet>
-      {/* <h1>Hello there</h1> */}
+      <Box
+        backgroundImage="/static/background.jpg"
+        backgroundRepeat="no-repeat"
+        backgroundSize="cover"
+        backgroundAttachment="fixed"
+      >
         <Navbar></Navbar>
+        <Header></Header>
+        <Flex
+          height="100vh"
+          backgroundColor="white"
+          alignItems="center"
+          flexDirection="column"
+          padding="3%"
+        >
+          <HeadingWithLogo>Who we are</HeadingWithLogo>
+          <About></About>
+        </Flex>
+      </Box>
     </>
   );
 };
