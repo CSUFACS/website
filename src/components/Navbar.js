@@ -1,12 +1,18 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
 import { Link } from "gatsby";
 import React from "react";
+import logo from "../../static/logo.svg";
 
 export function Navbar() {
   return (
-    <Flex justifyContent="space-between" boxShadow="md" backgroundColor="white" height="8vh">
+    <Flex
+      justifyContent="space-between"
+      boxShadow="md"
+      backgroundColor="white"
+      height="8vh"
+    >
       <Flex alignItems="center" fontSize="40px" fontWeight="900">
-        <img src="/static/logo.svg" width="50px" height="50px"></img>
+        <img src={logo} width="50px" height="50px"></img>
         <Flex paddingLeft="10px">
           CSUF
           <Text color="acsgreen" fontFamily="Poppins">

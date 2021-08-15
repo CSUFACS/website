@@ -6,7 +6,7 @@ import { Header } from "../components/Header";
 import HeadingWithLogo from "../components/HeadingWithLogo";
 import { About } from "../components/About";
 import { Footer } from "../components/Footer";
-import background from "../../public/static/background.jpg";
+import background from "../../static/background.jpg";
 
 const IndexPage = () => {
   return (

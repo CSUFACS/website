@@ -1,5 +1,5 @@
 import { Flex, Text } from "@chakra-ui/react";
-import logo from "../../public/static/logo.svg";
+import logo from "../../static/logo.svg";
 import React from "react";
 
 export function Header() {

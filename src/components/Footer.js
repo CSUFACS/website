@@ -1,5 +1,6 @@
 import { Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import logo from "../../static/logo.svg";
 
 export function Footer() {
   return (
@@ -15,7 +16,7 @@ export function Footer() {
       fontSize="30px"
     >
       <Text padding="20px">2021</Text>
-      <img src="/static/logo.svg" width="70px" height="70px"></img>
+      <img src={logo} width="70px" height="70px"></img>
       <Text padding="20px">ACS</Text>
     </Flex>
   );

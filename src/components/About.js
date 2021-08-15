@@ -5,7 +5,7 @@ import {
   faFacebook,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import img1 from "../../public/static/img1.jpg";
+import img1 from "../../static/img1.jpg";
 import React from "react";
 import HeadingWithLogo from "./HeadingWithLogo";
 
