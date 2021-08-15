@@ -1,5 +1,4 @@
 import { Flex, Heading } from "@chakra-ui/react";
-import logo from "../../public/static/logo.svg"
 import React from "react";
 import logo from "../../static/logo.svg";
 
