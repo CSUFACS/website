@@ -5,6 +5,7 @@ import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { Header } from "../components/Header";
 import HeadingWithLogo from "../components/HeadingWithLogo";
 import { About } from "../components/About";
+import { Footer } from "../components/Footer";
 
 const IndexPage = () => {
   return (
@@ -13,25 +14,26 @@ const IndexPage = () => {
         <meta charSet="utf-8" />
         <title>CSUFACS</title>
       </Helmet>
-      <Box
+      <Flex
         backgroundImage="/static/background.jpg"
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
         backgroundAttachment="fixed"
+        flexDirection="column"
       >
         <Navbar></Navbar>
         <Header></Header>
         <Flex
-          height="100vh"
+          paddingTop="30px"
           backgroundColor="white"
           alignItems="center"
           flexDirection="column"
-          padding="3%"
         >
           <HeadingWithLogo>Who we are</HeadingWithLogo>
           <About></About>
         </Flex>
-      </Box>
+        <Footer></Footer>
+      </Flex>
     </>
   );
 };
