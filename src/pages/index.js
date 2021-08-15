@@ -1,11 +1,12 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { Navbar } from "../components/Navbar";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { Header } from "../components/Header";
 import HeadingWithLogo from "../components/HeadingWithLogo";
 import { About } from "../components/About";
 import { Footer } from "../components/Footer";
+import background from "../../public/static/background.jpg";
 
 const IndexPage = () => {
   return (
@@ -15,7 +16,7 @@ const IndexPage = () => {
         <title>CSUFACS</title>
       </Helmet>
       <Flex
-        backgroundImage="/static/background.jpg"
+        backgroundImage={background}
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
         backgroundAttachment="fixed"

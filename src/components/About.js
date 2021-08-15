@@ -3,10 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDiscord,
   faFacebook,
-  faGit,
-  faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import img1 from "../../public/static/img1.jpg";
 import React from "react";
 import HeadingWithLogo from "./HeadingWithLogo";
 
@@ -37,7 +36,7 @@ export function About() {
           Chinese-American culture through a variety of traditional and modern
           dances, engaging theater performances, and many more.
         </Box>
-        <Image boxSize="xl" objectFit="contain" src="static/img1.jpg"></Image>
+        <Image boxSize="xl" objectFit="contain" src={img1}></Image>
       </Flex>
       <HeadingWithLogo>Events</HeadingWithLogo>
       <Flex justifyContent="center">
@@ -65,7 +64,12 @@ export function About() {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </Flex>
-      <Flex flexDirection="row" justifyContent="center" fontSize="50px" paddingBottom="10%">
+      <Flex
+        flexDirection="row"
+        justifyContent="center"
+        fontSize="50px"
+        paddingBottom="10%"
+      >
         <Flex justifyContent="space-around" width="50vw">
           <Link href="https://www.instagram.com/csufacs/">
             <FontAwesomeIcon icon={faInstagram} />
