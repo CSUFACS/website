@@ -18,6 +18,7 @@ const IndexPage = () => {
       <Flex
         backgroundImage={background}
         backgroundRepeat="no-repeat"
+        backgroundPosition="center"
         backgroundSize="cover"
         backgroundAttachment="fixed"
         flexDirection="column"
@@ -30,7 +31,6 @@ const IndexPage = () => {
           alignItems="center"
           flexDirection="column"
         >
-          <HeadingWithLogo>Who we are</HeadingWithLogo>
           <About></About>
         </Flex>
         <Footer></Footer>

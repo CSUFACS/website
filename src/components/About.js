@@ -12,18 +12,19 @@ import HeadingWithLogo from "./HeadingWithLogo";
 export function About() {
   return (
     <Flex
+      marginTop="30px"
       padding="10px"
       flexDirection="column"
       justifyContent="center"
       width="90vw"
     >
+      <HeadingWithLogo>Who we are</HeadingWithLogo>
       <Flex
-        flexDirection="row"
-        flexWrap="wrap"
-        justifyContent="center"
+        flexDirection={{ lg: "row", base: "column" }}
+        justifyContent="flex-end"
         paddingBottom="30px"
       >
-        <Box maxWidth="60%" fontSize="20px">
+        <Box maxWidth={{ lg: "60%", base: "100%" }} textAlign={{lg: "left", base: "center"}} fontSize="25px">
           The Association of Chinese Students (ACS) is a social-cultural
           organization on campus for students who are a part of and interested
           in Chinese-American culture. Members of ACS are given opportunities to
@@ -36,52 +37,55 @@ export function About() {
           Chinese-American culture through a variety of traditional and modern
           dances, engaging theater performances, and many more.
         </Box>
-        <Image boxSize="xl" objectFit="contain" src={img1}></Image>
+        <Image
+          margin="0 auto"
+          boxSize={{ lg: "xl", base: "md" }}
+          objectFit="contain"
+          src={img1}
+        ></Image>
       </Flex>
-      <HeadingWithLogo>Events</HeadingWithLogo>
-      <Flex justifyContent="center">
-        <iframe
-          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&src=Y3N1Zi5hY3MuZXZlbnRzQGdtYWlsLmNvbQ&color=%23F09300"
-          width="800"
-          height="600"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </Flex>
-      <HeadingWithLogo>Get Involved</HeadingWithLogo>
-      <Flex
-        alignContent="center"
-        justifyContent="center"
-        textAlign="center"
-        flexDirection="column"
-        fontSize="20px"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </Flex>
-      <Flex
-        flexDirection="row"
-        justifyContent="center"
-        fontSize="50px"
-        paddingBottom="10%"
-      >
-        <Flex justifyContent="space-around" width="50vw">
-          <Link href="https://www.instagram.com/csufacs/">
-            <FontAwesomeIcon icon={faInstagram} />
-          </Link>
-          <Link href="https://discord.gg/7uaJmDQ">
-            <FontAwesomeIcon icon={faDiscord} />
-          </Link>
-          <Link href="https://www.facebook.com/groups/ACSCSUF/">
-            <FontAwesomeIcon icon={faFacebook} />
-          </Link>
+      <Box marginTop="50px">
+        <HeadingWithLogo>Events</HeadingWithLogo>
+        <Flex justifyContent="center">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&src=Y3N1Zi5hY3MuZXZlbnRzQGdtYWlsLmNvbQ&color=%23F09300"
+            width="800"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
         </Flex>
-      </Flex>
+      </Box>
+      <Box marginTop="50px">
+        <HeadingWithLogo>Get Involved</HeadingWithLogo>
+        <Flex
+          alignContent="center"
+          justifyContent="center"
+          textAlign="center"
+          flexDirection="column"
+          fontSize="25px"
+        >
+          Follow us on social media for the latest updates
+        </Flex>
+        <Flex
+          flexDirection="row"
+          justifyContent="center"
+          fontSize="50px"
+          paddingBottom="10%"
+        >
+          <Flex justifyContent="space-around" width="50vw">
+            <Link href="https://www.instagram.com/csufacs/">
+              <FontAwesomeIcon icon={faInstagram} />
+            </Link>
+            <Link href="https://discord.gg/7uaJmDQ">
+              <FontAwesomeIcon icon={faDiscord} />
+            </Link>
+            <Link href="https://www.facebook.com/groups/ACSCSUF/">
+              <FontAwesomeIcon icon={faFacebook} />
+            </Link>
+          </Flex>
+        </Flex>
+      </Box>
     </Flex>
   );
 }
