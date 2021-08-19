@@ -24,7 +24,11 @@ export function About() {
         justifyContent="flex-end"
         paddingBottom="30px"
       >
-        <Box maxWidth={{ lg: "60%", base: "100%" }} textAlign={{lg: "left", base: "center"}} fontSize="25px">
+        <Box
+          maxWidth={{ lg: "60%", base: "100%" }}
+          textAlign={{ lg: "left", base: "center" }}
+          fontSize={{ lg: "25px", base: "20px" }}
+        >
           The Association of Chinese Students (ACS) is a social-cultural
           organization on campus for students who are a part of and interested
           in Chinese-American culture. Members of ACS are given opportunities to
@@ -63,7 +67,7 @@ export function About() {
           justifyContent="center"
           textAlign="center"
           flexDirection="column"
-          fontSize="25px"
+          fontSize={{ lg: "25px", base: "20px" }}
         >
           Follow us on social media for the latest updates
         </Flex>
