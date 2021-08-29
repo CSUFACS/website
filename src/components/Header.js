@@ -19,13 +19,13 @@ export function Header() {
         <Image
           src={logo}
           margin="10px"
-          height={{ lg: "200px", md: "180px", base: "150px" }}
-          width={{ lg: "200px", md: "180px", base: "150px" }}
+          height={{ lg: "180px", md: "150px", base: "150px" }}
+          width={{ lg: "180px", md: "150px", base: "150px" }}
         ></Image>
         <Flex
           flexDirection="column"
           // fontSize={["sm", "40px", "40px", "50px", "70px"]}
-          fontSize={{ lg: "55px", md: "50px", base: "30px" }}
+          fontSize={{ lg: "55px", md: "40px", base: "30px" }}
           fontWeight="bold"
         >
           <Text>We are the</Text>

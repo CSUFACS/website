@@ -14,6 +14,7 @@ export function Footer() {
       fontWeight="bold"
       color="white"
       fontSize="30px"
+      // marginBottom="10px"
     >
       <Text padding="20px">2021</Text>
       <img src={logo} width="70px" height="70px"></img>

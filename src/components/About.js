@@ -69,6 +69,7 @@ export function About() {
           flexDirection="column"
           fontSize={{ lg: "25px", base: "20px" }}
         >
+          We meet every Tuesday @ 4pm at the TSU Alvarado!<br></br>
           Follow us on social media for the latest updates
         </Flex>
         <Flex
