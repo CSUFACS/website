@@ -10,6 +10,13 @@ const theme = {
     heading: "Poppins",
     body: "Poppins",
   },
+  styles: {
+    global: {
+      a: {
+        _hover: { color: "acsgreen" }
+      }
+    }
+  }
 };
 
 export default extendTheme(theme);

@@ -51,7 +51,7 @@ export function Navbar() {
     >
       <Flex
         alignItems="center"
-        fontSize={{ lg: "40px", base: "30px" }}
+        fontSize={{ lg: "40px", base: "40px" }}
         fontWeight="900"
         justifyContent="space-between"
       >
@@ -59,8 +59,8 @@ export function Navbar() {
           <Image
             src={logo}
             paddingLeft="10px"
-            width={{ lg: "50px", base: "40px" }}
-            height={{ lg: "50px", base: "40px" }}
+            width={{ base: "60px" }}
+            height={{ base: "60px" }}
           ></Image>
           <Flex paddingLeft="10px">
             CSUF
@@ -77,13 +77,13 @@ export function Navbar() {
         alignItems="center"
         justifyContent="space-evenly"
         minWidth="50%"
-        fontSize={{ lg: "20px", base: "15px" }}
+        fontSize={{ base: "20px" }}
         fontWeight="light"
         flexDir={{ base: "column", lg: "row" }}
         display={{ base: !isOpen ? "none" : "flex", lg: "flex" }}
       >
-        <Link to ="/">Home</Link>
-        <Link to ="membership">Membership</Link>
+        <Link to ="../">Home</Link>
+        <Link to ="../membership">Membership</Link>
         <Link>Board</Link>
         <Link>Families</Link>
         <Link>Contact</Link>
