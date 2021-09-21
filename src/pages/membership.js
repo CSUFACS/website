@@ -2,9 +2,7 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { Navbar } from "../components/Navbar";
 import { Box, Flex, Image, Link } from "@chakra-ui/react";
-import { Header } from "../components/Header";
 import HeadingWithLogo from "../components/HeadingWithLogo";
-import { About } from "../components/About";
 import { Footer } from "../components/Footer";
 import img2 from "../../static/img2.jpg";
 
@@ -30,7 +28,7 @@ const MembershipPage = () => {
             paddingLeft="10%"
             paddingRight="10%"
             justifyContent="space-between"
-            fontSize={{ lg: "25px", base: "20px" }}
+            fontSize={{ lg: "20px", base: "20px" }}
           >
             <Image
               marginTop="20px"
@@ -38,11 +36,28 @@ const MembershipPage = () => {
               height={{ lg: "400px", base: "200px" }}
               src={img2}
             ></Image>
-            <Box marginTop="20px">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <Box marginTop="20px" fontSize={{ base: "15px" }}>
+              ACS is always open to new members! Whether you're a freshman, a
+              recent graduate, or attend another school, you are welcome to join
+              us at our meetings!
+              <br></br>
+              <br></br>
+              <b>Official membership for the entire year is $10 and includes:</b>
+              <ul>
+                <li>Ride priority to aftersocials</li>
+                <li>Discounts for official ACS merch</li>
+                <li>Access to winter retreat</li>
+                <li>Opportunities to join our internship program</li>
+                <li>Opportunities to join our big & little program</li>
+                <li>Opportunities to run for and vote for board positions</li>
+              </ul>
+              <br></br>
+              While our events and meetings are free and open to the general public, only
+              official members will receive the above benefits. Want to know more?
+              come out to our next meeting or shoot us a message on Instagram <Link textDecoration="underline" href="https://www.instagram.com/csufacs/">@CSUFACS</Link>
             </Box>
             <Box marginTop="20px" marginBottom="30px">
-              <Link textDecoration="underline">Apply here!</Link>
+              <Link textDecoration="underline" href="https://forms.gle/Zn68386HbLgSx6CE6">Apply here!</Link>
             </Box>
           </Flex>
         </Flex>
