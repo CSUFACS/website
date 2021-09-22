@@ -33,10 +33,10 @@ const MembershipPage = () => {
             <Image
               marginTop="20px"
               objectFit="contain"
-              height={{ lg: "400px", base: "200px" }}
+              height={{ lg: "400px", md:"300px", base: "200px" }}
               src={img2}
             ></Image>
-            <Box marginTop="20px" fontSize={{ base: "15px" }}>
+            <Box marginTop="20px" fontSize={{lg: "20px", md:"17px", base: "15px" }}>
               ACS is always open to new members! Whether you're a freshman, a
               recent graduate, or attend another school, you are welcome to join
               us at our meetings!
@@ -47,8 +47,8 @@ const MembershipPage = () => {
                 <li>Ride priority to aftersocials</li>
                 <li>Discounts for official ACS merch</li>
                 <li>Access to winter retreat</li>
-                <li>Opportunities to join our internship program</li>
                 <li>Opportunities to join our big & little program</li>
+                <li>Opportunities to join our internship program</li>
                 <li>Opportunities to run for and vote for board positions</li>
               </ul>
               <br></br>
