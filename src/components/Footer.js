@@ -17,7 +17,11 @@ export function Footer() {
       // marginBottom="10px"
     >
       <Text padding="20px">2021</Text>
-      <Image src={logo} width={{ lg: "60px", base: "50px" }} height={{ lg: "60px", base: "50px" }}></Image>
+      <Image
+        src={logo}
+        width={{ lg: "60px", base: "50px" }}
+        height={{ lg: "60px", base: "50px" }}
+      ></Image>
       <Text padding="20px">ACS</Text>
     </Flex>
   );
