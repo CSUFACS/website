@@ -12,6 +12,7 @@ const IndexPage = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
+        <link rel="icon" href="logo.svg"></link>
         <title>CSUFACS</title>
       </Helmet>
       <Flex

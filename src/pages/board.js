@@ -11,11 +11,12 @@ const BoardPage = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
+        <link rel="icon" href="logo.svg"></link>
         <title>CSUFACS</title>
       </Helmet>
       <Flex flexDirection="column">
         <Navbar></Navbar>
-        <Flex paddingTop="30px"></Flex>
+        <Flex paddingTop="20px"></Flex>
         <HeadingWithLogo>Board</HeadingWithLogo>
         <Flex flexDirection="column" width="100%" alignItems="center">
           <Flex
@@ -31,52 +32,52 @@ const BoardPage = () => {
           >
             <BoardCard
               name="Brandon Dugas"
-              imageUrl="./brandon.jpg"
+              imageUrl="../board/brandon.jpg"
               position="President"
             ></BoardCard>
             <BoardCard
               name="Amy Mohamed"
-              imageUrl="./amy.jpg"
+              imageUrl="../board/amy.jpg"
               position="Internal Vice President"
             ></BoardCard>
             <BoardCard
               name="Joseph Phung"
-              imageUrl="./joseph.jpg"
+              imageUrl="../board/joseph.jpg"
               position="External Vice President"
             ></BoardCard>
             <BoardCard
               name="Amanda Nunez"
-              imageUrl="./amanda.jpg"
+              imageUrl="../board/amanda.jpg"
               position="Secretary"
             ></BoardCard>
             <BoardCard
               name="Jason Wong"
-              imageUrl="./jason.jpg"
+              imageUrl="../board/jason.jpg"
               position="Treasurer"
             ></BoardCard>
             <BoardCard
               name="Rue Nguyen"
-              imageUrl="./rue.jpg"
+              imageUrl="../board/rue.jpg"
               position="Event Coordinator"
             ></BoardCard>
             <BoardCard
               name="Benson Lee"
-              imageUrl="./benson.jpg"
+              imageUrl="../board/benson.jpg"
               position="Marketing Director"
             ></BoardCard>
             <BoardCard
               name="Cathy Tang"
-              imageUrl="./cathy.jpg"
+              imageUrl="../board/cathy.jpg"
               position="Culture Night Chair"
             ></BoardCard>
             <BoardCard
               name="Hailey Riddle"
-              imageUrl="./hailey.jpg"
+              imageUrl="../board/hailey.jpg"
               position="Creative Director"
             ></BoardCard>
             <BoardCard
               name="Joann Lee"
-              imageUrl="./joann.jpg"
+              imageUrl="../board/joann.jpg"
               position="Historian"
             ></BoardCard>
           </Flex>

@@ -48,7 +48,7 @@ export function About() {
           src={img1}
         ></Image>
       </Flex>
-      <Box marginTop="50px">
+      {/* <Box marginTop="50px">
         <HeadingWithLogo>Events</HeadingWithLogo>
         <Flex justifyContent="center">
           <iframe
@@ -59,36 +59,26 @@ export function About() {
             scrolling="no"
           ></iframe>
         </Flex>
-      </Box>
+      </Box> */}
       <Box marginTop="50px">
-        <HeadingWithLogo>Get Involved</HeadingWithLogo>
+        <HeadingWithLogo>Join us!</HeadingWithLogo>
         <Flex
           alignContent="center"
           justifyContent="center"
           textAlign="center"
           flexDirection="column"
           fontSize={{ lg: "25px", base: "20px" }}
+          marginBottom="70px"
         >
-          We meet every Tuesday @ 4pm at the TSU Alvarado!<br></br>
-          Follow us on social media for the latest updates
-        </Flex>
-        <Flex
-          flexDirection="row"
-          justifyContent="center"
-          fontSize="50px"
-          paddingBottom="10%"
-        >
-          <Flex justifyContent="space-around" width="50vw">
-            <Link href="https://www.instagram.com/csufacs/">
-              <FontAwesomeIcon icon={faInstagram} />
-            </Link>
-            <Link href="https://discord.gg/7uaJmDQ">
-              <FontAwesomeIcon icon={faDiscord} />
-            </Link>
-            <Link href="https://www.facebook.com/groups/ACSCSUF/">
-              <FontAwesomeIcon icon={faFacebook} />
-            </Link>
-          </Flex>
+          <span>
+            We meet every Tuesday @ 4pm at the TSU Alvarado!
+            <br />
+            Follow us on our{" "}
+            <Link href="../contact" style={{textDecoration:"underline"}}>
+              social media
+            </Link>{" "}
+            for the latest updates!
+          </span>
         </Flex>
       </Box>
     </Flex>
