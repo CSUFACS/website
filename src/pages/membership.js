@@ -13,9 +13,7 @@ const MembershipPage = () => {
         <meta charSet="utf-8" />
         <title>CSUFACS</title>
       </Helmet>
-      <Flex
-        flexDirection="column"
-      >
+      <Flex flexDirection="column">
         <Navbar></Navbar>
         <Flex justifyContent="center" flexDirection="column">
           <Box marginTop="20px">
@@ -33,16 +31,21 @@ const MembershipPage = () => {
             <Image
               marginTop="20px"
               objectFit="contain"
-              height={{ lg: "400px", md:"300px", base: "200px" }}
+              height={{ lg: "400px", md: "300px", base: "200px" }}
               src={img2}
             ></Image>
-            <Box marginTop="20px" fontSize={{lg: "20px", md:"17px", base: "15px" }}>
+            <Box
+              marginTop="20px"
+              fontSize={{ lg: "20px", md: "17px", base: "15px" }}
+            >
               ACS is always open to new members! Whether you're a freshman, a
               recent graduate, or attend another school, you are welcome to join
               us at our meetings!
               <br></br>
               <br></br>
-              <b>Official membership for the entire year is $10 and includes:</b>
+              <b>
+                Official membership for the entire year is $10 and includes:
+              </b>
               <ul>
                 <li>Ride priority to aftersocials</li>
                 <li>Discounts for official ACS merch</li>
@@ -52,12 +55,24 @@ const MembershipPage = () => {
                 <li>Opportunities to run for and vote for board positions</li>
               </ul>
               <br></br>
-              While our events and meetings are free and open to the general public, only
-              official members will receive the above benefits. Want to know more?
-              come out to our next meeting or shoot us a message on Instagram <Link textDecoration="underline" href="https://www.instagram.com/csufacs/">@CSUFACS</Link>
+              While our events and meetings are free and open to the general
+              public, only official members will receive the above benefits.
+              Want to know more? come out to our next meeting or shoot us a
+              message on Instagram{" "}
+              <Link
+                textDecoration="underline"
+                href="https://www.instagram.com/csufacs/"
+              >
+                @CSUFACS
+              </Link>
             </Box>
             <Box marginTop="20px" marginBottom="30px">
-              <Link textDecoration="underline" href="https://forms.gle/Zn68386HbLgSx6CE6">Apply here!</Link>
+              <Link
+                textDecoration="underline"
+                href="https://forms.gle/Zn68386HbLgSx6CE6"
+              >
+                Apply here!
+              </Link>
             </Box>
           </Flex>
         </Flex>

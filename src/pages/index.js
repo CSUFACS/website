@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import { Navbar } from "../components/Navbar";
 import { Flex } from "@chakra-ui/react";
 import { Header } from "../components/Header";
-import HeadingWithLogo from "../components/HeadingWithLogo";
 import { About } from "../components/About";
 import { Footer } from "../components/Footer";
 import background from "../../static/background.jpg";

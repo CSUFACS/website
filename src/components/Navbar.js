@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 import React, { useEffect } from "react";
 import logo from "../../static/logo.svg";
 
-const MotionFlex = motion(Flex)
+const MotionFlex = motion(Flex);
 
 export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -40,8 +40,6 @@ export function Navbar() {
   //   }
   // }, [controls, isOpen]);
 
-  
-
   return (
     <Flex
       justifyContent="space-between"
@@ -68,7 +66,11 @@ export function Navbar() {
           </Flex>
         </Flex>
         <Flex display={{ base: "flex", lg: "none" }} onClick={() => toggle()}>
-          {isOpen ? <CloseIcon boxSize="20px"></CloseIcon> : <HamburgerIcon></HamburgerIcon>}
+          {isOpen ? (
+            <CloseIcon boxSize="20px"></CloseIcon>
+          ) : (
+            <HamburgerIcon></HamburgerIcon>
+          )}
         </Flex>
       </Flex>
       <MotionFlex
@@ -82,8 +84,8 @@ export function Navbar() {
         flexDir={{ base: "column", lg: "row" }}
         display={{ base: !isOpen ? "none" : "flex", lg: "flex" }}
       >
-        <Link to ="../">Home</Link>
-        <Link to ="../membership">Membership</Link>
+        <Link to="../">Home</Link>
+        <Link to="../membership">Membership</Link>
         <Link>Board</Link>
         <Link>Contact</Link>
       </MotionFlex>
