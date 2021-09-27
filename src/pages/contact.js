@@ -1,15 +1,18 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { Navbar } from "../components/Navbar";
-import { Image, Flex, Link } from "@chakra-ui/react";
+import { Img, Flex, Link } from "@chakra-ui/react";
 import HeadingWithLogo from "../components/HeadingWithLogo";
 import { Footer } from "../components/Footer";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { config } from "@fortawesome/fontawesome-svg-core";
 import {
   faDiscord,
   faFacebook,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+config.autoAddCss = false;
 
 const BoardPage = () => {
   return (
@@ -30,11 +33,11 @@ const BoardPage = () => {
             // height="80vh"
           >
             <HeadingWithLogo>Connect with us!</HeadingWithLogo>
-            <Image
-              src="./img3.jpg"
+            <Img
+              src="../img3.jpg"
               height={{ lg: "400px", md: "300px", base: "200px" }}
               marginBottom="20px"
-            ></Image>
+            ></Img>
             <Flex
               alignContent="center"
               justifyContent="center"
