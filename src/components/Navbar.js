@@ -86,7 +86,7 @@ export function Navbar() {
       >
         <Link to="../">Home</Link>
         <Link to="../membership">Membership</Link>
-        <Link to="../board">Board</Link>
+        <a href="../board">Board</a>
         <Link>Contact</Link>
       </MotionFlex>
     </Flex>
