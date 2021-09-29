@@ -46,6 +46,7 @@ export function Navbar() {
       boxShadow="md"
       backgroundColor="white"
       flexDir={{ base: "column", lg: "row" }}
+      minHeight="6vh"
     >
       <Flex
         alignItems="center"
@@ -69,7 +70,7 @@ export function Navbar() {
           {isOpen ? (
             <CloseIcon boxSize="20px"></CloseIcon>
           ) : (
-            <HamburgerIcon></HamburgerIcon>
+            <HamburgerIcon height="30px"></HamburgerIcon>
           )}
         </Flex>
       </Flex>
@@ -86,8 +87,8 @@ export function Navbar() {
       >
         <Link to="../">Home</Link>
         <Link to="../membership">Membership</Link>
-        <Link>Board</Link>
-        <Link>Contact</Link>
+        <Link to="../board">Board</Link>
+        <Link to="../contact">Contact</Link>
       </MotionFlex>
     </Flex>
   );

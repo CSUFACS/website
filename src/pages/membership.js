@@ -11,6 +11,7 @@ const MembershipPage = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
+        <link rel="icon" href="logo.svg"></link>
         <title>CSUFACS</title>
       </Helmet>
       <Flex flexDirection="column">
@@ -51,7 +52,7 @@ const MembershipPage = () => {
                 <ListItem>Discounts for official ACS merch</ListItem>
                 <ListItem>Access to winter retreat</ListItem>
                 <ListItem>
-                  Opportunities to join our big & little program
+                  Opportunities to join our mentorship (big & little) program
                 </ListItem>
                 <ListItem>
                   Opportunities to join our internship program

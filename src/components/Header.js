@@ -5,7 +5,7 @@ import React from "react";
 export function Header() {
   return (
     <Flex
-      height="92vh"
+      minHeight="94vh"
       flexDirection="row"
       alignItems="center"
       justifyContent={{ lg: "flex-start", base: "center" }}
