@@ -81,6 +81,44 @@ const BoardPage = () => {
               position="Historian"
             ></BoardCard>
           </Flex>
+          <HeadingWithLogo>Interns</HeadingWithLogo>
+          <Flex
+            flexDirection="row"
+            flexWrap="wrap"
+            maxWidth={{ lg: "80%", base: "100%" }}
+            alignItems="center"
+            alignContent="center"
+            justifyContent="center"
+            gridGap={{ lg: "120px", md: "50px", base: "30px" }}
+            marginTop="30px"
+            marginBottom="30px"
+          >
+            <BoardCard
+              name="Amy Eng"
+              imageUrl="../interns/amy.jpg"
+              position="Event Coordinator Intern"
+            ></BoardCard>
+            <BoardCard
+              name="Leona Wong"
+              imageUrl="../interns/leona.jpg"
+              position="Marketing Director Intern"
+            ></BoardCard>
+            <BoardCard
+              name="John Nguyen"
+              imageUrl="../interns/john.jpg"
+              position="Culture Night Chair Intern"
+            ></BoardCard>
+            <BoardCard
+              name="Wei Chong"
+              imageUrl="../interns/wei.jpg"
+              position="Creative Director Intern"
+            ></BoardCard>
+            <BoardCard
+              name="James Haojia Shan"
+              imageUrl="../interns/james.jpg"
+              position="Historian Intern"
+            ></BoardCard>
+          </Flex>
         </Flex>
         <Footer></Footer>
       </Flex>
