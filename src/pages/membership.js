@@ -1,10 +1,11 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { Navbar } from "../components/Navbar";
-import { Box, Flex, Image, Link } from "@chakra-ui/react";
+import { Box, Flex, Link, ListItem, UnorderedList } from "@chakra-ui/layout";
 import HeadingWithLogo from "../components/HeadingWithLogo";
 import { Footer } from "../components/Footer";
 import img2 from "../../static/img2.jpg";
+import { Image } from "@chakra-ui/image";
 
 const MembershipPage = () => {
   return (
@@ -47,7 +48,7 @@ const MembershipPage = () => {
               <b>
                 Official membership for the entire year is $10 and includes:
               </b>
-              <UnorderedList>
+              <UnorderedList listStylePosition="inside" textAlign="center">
                 <ListItem>Ride priority to aftersocials</ListItem>
                 <ListItem>Discounts for official ACS merch</ListItem>
                 <ListItem>Access to winter retreat</ListItem>

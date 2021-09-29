@@ -1,10 +1,4 @@
-import { Flex, Text, Image, Box, Button, Link } from "@chakra-ui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faDiscord,
-  faFacebook,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { Flex, Image, Box, Link } from "@chakra-ui/react";
 import img1 from "../../static/img1.jpg";
 import React from "react";
 import HeadingWithLogo from "./HeadingWithLogo";
@@ -48,18 +42,6 @@ export function About() {
           src={img1}
         ></Image>
       </Flex>
-      {/* <Box marginTop="50px">
-        <HeadingWithLogo>Events</HeadingWithLogo>
-        <Flex justifyContent="center">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&src=Y3N1Zi5hY3MuZXZlbnRzQGdtYWlsLmNvbQ&color=%23F09300"
-            width="800"
-            height="600"
-            frameborder="0"
-            scrolling="no"
-          ></iframe>
-        </Flex>
-      </Box> */}
       <Box marginTop="50px">
         <HeadingWithLogo>Join us!</HeadingWithLogo>
         <Flex
