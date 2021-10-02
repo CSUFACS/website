@@ -114,7 +114,7 @@ const BoardPage = () => {
               position="Creative Director Intern"
             ></BoardCard>
             <BoardCard
-              name="James Haojia Shan"
+              name="James Shan"
               imageUrl="../interns/james.jpg"
               position="Historian Intern"
             ></BoardCard>
