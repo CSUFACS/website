@@ -1,20 +1,19 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import { Navbar } from "../components/Navbar";
 import { Box, Flex, Link, ListItem, UnorderedList } from "@chakra-ui/layout";
 import HeadingWithLogo from "../components/HeadingWithLogo";
 import { Footer } from "../components/Footer";
-import img2 from "../../static/img2.jpg";
 import { Image } from "@chakra-ui/image";
 
 const MembershipPage = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <meta charSet="utf-8" />
         <link rel="icon" href="logo.svg"></link>
         <title>CSUFACS</title>
-      </Helmet>
+      </Head>
       <Flex flexDirection="column">
         <Navbar></Navbar>
         <Flex justifyContent="center" flexDirection="column">
@@ -34,15 +33,16 @@ const MembershipPage = () => {
               marginTop="20px"
               objectFit="contain"
               height={{ lg: "400px", md: "300px", base: "200px" }}
-              src={img2}
+              src={"./img2.jpg"}
+              alt=""
             ></Image>
             <Box
               marginTop="20px"
               fontSize={{ lg: "20px", md: "17px", base: "15px" }}
             >
-              ACS is always open to new members! Whether you're a freshman, a
-              recent graduate, or attend another school, you are welcome to join
-              us at our meetings!
+              ACS is always open to new members! Whether you&apos;re a freshman,
+              a recent graduate, or attend another school, you are welcome to
+              join us at our meetings!
               <br></br>
               <br></br>
               <b>

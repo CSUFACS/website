@@ -1,5 +1,4 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
-import logo from "../../static/logo.svg";
 import React from "react";
 
 export function Header() {
@@ -17,7 +16,8 @@ export function Header() {
         alignItems="center"
       >
         <Image
-          src={logo}
+          src={"./logo.svg"}
+          alt=""
           margin="10px"
           height={{ lg: "180px", md: "150px", base: "150px" }}
           width={{ lg: "180px", md: "150px", base: "150px" }}

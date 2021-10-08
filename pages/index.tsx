@@ -1,22 +1,21 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import { Navbar } from "../components/Navbar";
 import { Flex } from "@chakra-ui/react";
 import { Header } from "../components/Header";
 import { About } from "../components/About";
 import { Footer } from "../components/Footer";
-import background from "../../static/background.jpg";
 
 const IndexPage = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <meta charSet="utf-8" />
         <link rel="icon" href="logo.svg"></link>
         <title>CSUFACS</title>
-      </Helmet>
+      </Head>
       <Flex
-        backgroundImage={background}
+        backgroundImage={"./background.jpg"}
         backgroundRepeat="no-repeat"
         backgroundPosition="center"
         backgroundSize="cover"

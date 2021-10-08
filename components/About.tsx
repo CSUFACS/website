@@ -1,5 +1,4 @@
 import { Flex, Image, Box, Link } from "@chakra-ui/react";
-import img1 from "../../static/img1.jpg";
 import React from "react";
 import HeadingWithLogo from "./HeadingWithLogo";
 
@@ -39,7 +38,8 @@ export function About() {
           margin="0 auto"
           boxSize={{ lg: "xl", base: "md" }}
           objectFit="contain"
-          src={img1}
+          src={"./img1.jpg"}
+          alt=""
         ></Image>
       </Flex>
       <Box marginTop="50px">
@@ -56,7 +56,7 @@ export function About() {
             We meet every Tuesday @ 4pm at the TSU Alvarado!
             <br />
             Follow us on our{" "}
-            <Link href="../contact" style={{textDecoration:"underline"}}>
+            <Link href="../contact" style={{ textDecoration: "underline" }}>
               social media
             </Link>{" "}
             for the latest updates!

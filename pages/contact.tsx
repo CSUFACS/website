@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import { Navbar } from "../components/Navbar";
 import { Img, Flex, Link } from "@chakra-ui/react";
 import HeadingWithLogo from "../components/HeadingWithLogo";
@@ -17,11 +17,11 @@ config.autoAddCss = false;
 const BoardPage = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <meta charSet="utf-8" />
         <link rel="icon" href="logo.svg"></link>
         <title>CSUFACS</title>
-      </Helmet>
+      </Head>
       <Flex flexDirection="column">
         <Navbar></Navbar>
         <Flex paddingTop="20px" alignItems="center"></Flex>

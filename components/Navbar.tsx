@@ -1,9 +1,8 @@
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { Flex, Image, Text } from "@chakra-ui/react";
 import { motion, useAnimation } from "framer-motion";
-import { Link } from "gatsby";
+import Link from "next/link";
 import React, { useEffect } from "react";
-import logo from "../../static/logo.svg";
 
 const MotionFlex = motion(Flex);
 
@@ -56,7 +55,7 @@ export function Navbar() {
       >
         <Flex>
           <Image
-            src={logo}
+            src={"./logo.svg"}
             paddingLeft="10px"
             width={{ base: "60px" }}
             height={{ base: "60px" }}
@@ -74,7 +73,7 @@ export function Navbar() {
           )}
         </Flex>
       </Flex>
-      <MotionFlex
+      <Flex
         animate={controls}
         // initial={{ opacity: "0%" }}
         alignItems="center"
@@ -85,11 +84,19 @@ export function Navbar() {
         flexDir={{ base: "column", lg: "row" }}
         display={{ base: !isOpen ? "none" : "flex", lg: "flex" }}
       >
-        <Link to="../">Home</Link>
-        <Link to="../membership">Membership</Link>
-        <Link to="../board">Board</Link>
-        <Link to="../contact">Contact</Link>
-      </MotionFlex>
+        <Link href="../">
+          <a>Home</a>
+        </Link>
+        <Link href="../membership">
+          <a>Membership</a>
+        </Link>
+        <Link href="../board">
+          <a>Board</a>
+        </Link>
+        <Link href="../contact">
+          <a>Contact</a>
+        </Link>
+      </Flex>
     </Flex>
   );
 }

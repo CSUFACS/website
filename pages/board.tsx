@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import { Navbar } from "../components/Navbar";
 import { Flex } from "@chakra-ui/react";
 import HeadingWithLogo from "../components/HeadingWithLogo";
@@ -9,11 +9,11 @@ import { BoardCard } from "../components/BoardCard";
 const BoardPage = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <meta charSet="utf-8" />
         <link rel="icon" href="logo.svg"></link>
         <title>CSUFACS</title>
-      </Helmet>
+      </Head>
       <Flex flexDirection="column">
         <Navbar></Navbar>
         <Flex paddingTop="20px"></Flex>

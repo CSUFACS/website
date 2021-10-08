@@ -3,7 +3,13 @@ import { Img } from "@chakra-ui/image";
 import { Flex, Heading, Text } from "@chakra-ui/layout";
 import React from "react";
 
-export function BoardCard(props) {
+interface BoardCardProps {
+  name: string;
+  imageUrl: string;
+  position: string
+}
+
+export function BoardCard({name, imageUrl, position}: BoardCardProps) {
   return (
     <Flex
       flexDirection="column-reverse"
@@ -14,15 +20,15 @@ export function BoardCard(props) {
     >
       <Flex flexDirection="column" alignItems="center">
         <Heading fontSize="15px" fontWeight="bold">
-          {props.position}
+          {position}
         </Heading>
-        <Text fontSize="15px">{props.name}</Text>
+        <Text fontSize="15px">{name}</Text>
       </Flex>
       <Img
         borderRadius="full"
         boxSize="220px"
-        src={props.imageUrl}
-        alt={props.name}
+        src={imageUrl}
+        alt={name}
       />
     </Flex>
   );
