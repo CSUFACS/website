@@ -17,7 +17,7 @@ export function Footer() {
     >
       <Text padding="20px">2021</Text>
       <Image
-        src={"./logo.svg"}
+        src={"/logo.svg"}
         alt=""
         width={{ lg: "60px", base: "50px" }}
         height={{ lg: "60px", base: "50px" }}

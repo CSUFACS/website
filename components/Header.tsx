@@ -16,7 +16,7 @@ export function Header() {
         alignItems="center"
       >
         <Image
-          src={"./logo.svg"}
+          src={"/logo.svg"}
           alt=""
           margin="10px"
           height={{ lg: "180px", md: "150px", base: "150px" }}

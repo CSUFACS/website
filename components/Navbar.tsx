@@ -55,7 +55,7 @@ export function Navbar() {
       >
         <Flex>
           <Image
-            src={"./logo.svg"}
+            src={"/logo.svg"}
             paddingLeft="10px"
             width={{ base: "60px" }}
             height={{ base: "60px" }}

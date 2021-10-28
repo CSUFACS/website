@@ -9,11 +9,11 @@ interface HeadingWithLogoProps {
 export default function HeadingWithLogo({ children }: HeadingWithLogoProps) {
   return (
     <Flex flexDirection="row" justifyContent="center">
-      <Image src={"./logo.svg"} alt="" width="40px" height="40px"></Image>
+      <Image src={"/logo.svg"} alt="" width="40px" height="40px"></Image>
       <Heading paddingLeft="10px" paddingRight="10px">
         {children}
       </Heading>
-      <Image src={"./logo.svg"} width="40px" height="40px"></Image>
+      <Image src={"/logo.svg"} width="40px" height="40px"></Image>
     </Flex>
   );
 }
