@@ -56,11 +56,6 @@ const BoardPage = () => {
               position="Treasurer"
             ></BoardCard>
             <BoardCard
-              name="Rue Nguyen"
-              imageUrl="../board/rue.jpg"
-              position="Event Coordinator"
-            ></BoardCard>
-            <BoardCard
               name="Benson Lee"
               imageUrl="../board/benson.jpg"
               position="Marketing Director"
